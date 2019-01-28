@@ -1,0 +1,30 @@
+section{
+    align-items: center;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+section article:first-of-type a{
+    text-align: center;
+}
+
+input{
+    margin: 5px;
+}
+
+fieldset:nth-of-type(3) > div{
+    display: flex;
+}
+
+textarea{
+    width: 500px;
+    height: 160px;
+}
+
+table{
+    text-align: right;
+}

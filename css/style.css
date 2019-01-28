@@ -1,0 +1,401 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    background: #f1f1f1;
+    font-family: "Open Sans",arial,x-locale-body,sans-serif;
+    min-height: 100%;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    height: 100px;
+    color: white;
+}
+
+header img{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 80px;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    color: #ff2f2f;
+    font-family: arial, serif;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    color: #ff2f2f;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    text-decoration: overline underline;
+    color: #ffa229;
+}
+
+#here{
+    color: #ffa229;
+}
+
+.sep{
+    position: relative;
+    top: -2px;
+}
+
+h1{
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    border-bottom: 4px solid rgb(255, 92, 92);
+    padding-bottom: 9px;
+    padding-left: 40px;
+    color: rgb(38, 38, 38);
+    background: rgb(177, 177, 177) none repeat scroll 0% 0%;
+    padding-right: 40px;
+}
+
+section{
+    margin: auto;
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+#jeux{
+    width: 35%;
+}
+
+#jeux div{
+    flex-grow: 1;
+    padding: 10px;
+    margin: 5px;
+    background: white;
+    border: solid 1px #ccc;
+    text-align: center;
+    transition: 0.2s;
+}
+
+#jeux div div{
+    margin-bottom: 7px;
+}
+
+#jeux .pres{
+    border: solid 1px black;
+    height: 260px;
+}
+
+#jeux div div a img{
+    height: 30px;
+}
+
+#jeux div h3{
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: table;
+    font-size: 1.4em;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-left: 6px;
+    position: relative;
+    top: -15px;
+}
+
+#jeux div h2{
+    margin: auto;
+    display: table;
+}
+
+#jeux .boutonplay{
+    color: #ff9800;
+    transition: 150ms ease;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #ff9800;
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#jeux .boutonplay:hover{
+    color: #fd3021;
+    border-color: #fd3021;
+    background: rgba(0,0,0,0);
+}
+
+#jeux .nodispo img{
+    border-color: #6a6a6a;
+}
+
+#jeux .nodispo p{
+    color: #6a6a6a;
+}
+
+#jeux .nodispo h2{
+    color: #6a6a6a;
+}
+
+#jeux .nodispo .boutonplay{
+    color: #6a6a6a;
+    border: 2px solid #6a6a6a;
+}
+
+#jeux .nodispo a:hover{
+    cursor: no-drop;
+}
+
+#jeux .nodispo:hover{
+    cursor: no-drop;
+}
+
+#jeux div a{
+    text-decoration: none;
+}
+
+#stickwars{
+}
+
+#wargrounds{
+}
+
+#nilliewinnie{
+    width: 60%;
+}
+
+#nilliewinnie .nw1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    background: white;
+    border: solid 1px #ccc;
+    margin: 5px;
+}
+
+#nilliewinnie .nw1 div{
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    transition: 0.2s;
+    margin: auto;
+}
+
+#nilliewinnie .nw1 .nw11 h2{
+    font-size: 2em;
+    color: #ffbd4a;
+    margin: 25px;
+    margin-top: 15px;
+
+}
+
+#nilliewinnie .nw1 .nw11 img{
+    height: 350px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#nilliewinnie .nw1 .nw12 h3{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+#nilliewinnie .nw1 .nw12 div a img{
+    height: 40px;
+}
+
+#nilliewinnie .nw1 .nw12 iframe{
+    border: black 6px solid;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#nilliewinnie .nw2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border: solid 1px #ccc;
+    margin: 5px;
+}
+
+#nilliewinnie .nw2 .nw20{
+    display: flex;
+    padding: 12px;
+    height: 120px;
+    width: 280px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#nilliewinnie .nw2 .nw20 .nw202 img{
+    width: 120px;
+    height: 120px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#nilliewinnie .nw2 .nw20 .nw201{
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#nilliewinnie .nw2 .nw20 .nw201 h3{
+    margin-bottom: 3px;
+}
+
+#nilliewinnie .nw2 .nw20 .nw201 p{
+    margin-top: 2px;
+    margin-bottom: 6px;
+    color: #b5a9a9;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#nilliewinnie .nw2 .nw20 .nw201 .boutonDownload{
+    color: #ff9800;
+    transition: 150ms ease;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #ff9800;
+    width: 120px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#nilliewinnie .nw2 .nw20 .nw201 .boutonDownload:hover{
+    color: #fd3021;
+    border-color: #fd3021;
+    background: rgba(0,0,0,0);
+}
+
+#nilliewinnie .nw2 .nw20 .nw201 a{
+    text-decoration: none;
+}
+
+#pres{
+    flex-direction: column;
+    text-align: center;
+    margin: 0px;
+    font-size: 2.25em;
+    color: #2e2e2e;
+}
+
+nav h2{
+    padding: 10px;
+    background-color: white;
+    font-size: 2em;
+    color: gray;
+    border: 3px solid gray;
+    border-radius: 15px;
+}
+
+footer{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #2E2E2E;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer > p{
+    margin: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: gray;
+    text-align: center;
+}
+footer div{
+    margin: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer div i{
+    font-size: 1.6em;
+}
+
+@media screen and (max-width: 500px){
+    header{
+        justify-content: center;
+        height: 60px;
+    }
+    header img{
+        display: none;
+    }
+    section{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #nilliewinnie .nw1 .nw11 img{
+        width: 100%;
+        height: auto;
+    }
+    #nilliewinnie .nw1 .nw12 iframe{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #nilliewinnie{
+        width: 98%;
+    }
+    #jeux{
+        width: 98%;
+    }
+}
