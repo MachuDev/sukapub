@@ -24,15 +24,15 @@
                 if (isset($_POST['com'])) {
                     $entete  = 'MIME-Version: 1.0' . "\r\n";
                     $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                    $entete .= 'From: ' . $_POST['mail'] . "\r\n";
+                    $entete .= 'From: ' . trim(htmlentities($_POST['mail']) . "\r\n";
 
                     $message = '<h1>Message envoyé depuis la page PUB de sukaprod.com</h1>
-                                <p><b>Nom : </b>' . $_POST['nom'] . '<br>
-                                <b>Prenom : </b>' . $_POST['prenom'] . '<br>
-                                <b>Entreprise : </b>' . $_POST['entreprise'] . '<br>
-                                <b>Email : </b>' . $_POST['mail'] . '<p>
+                                <p><b>Nom : </b>' . trim(htmlentities($_POST['nom'])) . '<br>
+                                <b>Prenom : </b>' . trim(htmlentities($_POST['prenom'])) . '<br>
+                                <b>Entreprise : </b>' . trim(htmlentities($_POST['entreprise'])) . '<br>
+                                <b>Email : </b>' . trim(htmlentities($_POST['mail'])) . '<p>
                                 <p>
-                                <b>Commentaire : </b>' . $_POST['com'] . '</p>
+                                <b>Commentaire : </b>' . htmlentities($_POST['com']) . '</p>
                                 <p>
                                 <b>Choix de pub : </p>';
                     foreach($_POST['unepub'] as $valeur)
